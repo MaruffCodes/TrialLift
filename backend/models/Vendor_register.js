@@ -1,10 +1,9 @@
-// models/Vendor_register.js
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 
 const vendorRegisterSchema = new mongoose.Schema(
   {
-    fullname: { type: String, required: true },
+    fullname: { type: String, required: true }, // Use 'fullname' (lowercase f)
     mobile: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
